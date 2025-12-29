@@ -1,5 +1,5 @@
 ---
-title: yinwang 网摘
+title: yinwang.org 网摘
 date: 2025-07-25
 series: 网摘
 ---
