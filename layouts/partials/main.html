@@ -1,9 +1,9 @@
 <main>
-  {{ range .Site.Sections }}
+  {{ range .Site.Sections.ByTitle.Reverse}}
   <div>
     <h1>{{ lower .LinkTitle }}</h1>
 
-    {{ range .Pages.GroupByParam "series" }}
+    {{ range .Pages.GroupByParam "series"}}
     <h2>{{ .Key }}<sup>{{ .Pages.Len }}</sup></h2>
     <ul>
       {{ range .Pages }}
