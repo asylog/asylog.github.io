@@ -1,0 +1,48 @@
+baseURL = "https://asylog.github.io/"
+title = "asylog"
+
+pygmentsstyle = "monokai"
+pygmentscodefences = true
+pygmentscodefencesguesssyntax = true
+
+enableEmoji = true
+enableRobotsTXT = true
+
+copyright = 'WTFPL'
+
+[menus]
+  [[menus.main]]
+    name = 'readings'
+    pageRef = 'readings'
+  [[menus.main]]
+    name = 'about'
+    pageRef = 'about'
+  [[menus.main]]
+    name = 'rss'
+    url = '/index.xml'
+
+[outputs]
+home = ['html', 'rss']
+section = ['html']
+taxonomy = ['html']
+term = ['html']
+
+[params]
+mode = "light"
+subtitle = "excerpts and reflections, deviant ideas and intrusive thoughts."
+mathjax = true
+copyrightUrl = "https://www.wtfpl.net/"
+
+
+[frontmatter]
+date = ["lastmod", "date"]
+
+[services.rss]
+limit = 3
+
+[permalinks]
+writings = "/:section/:year/:slug/"
+readings = "/:section/:year/:slug/"
+
+[taxonomies]
+series = 'series'
