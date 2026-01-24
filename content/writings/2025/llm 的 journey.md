@@ -1,7 +1,7 @@
 ---
 title: llm 的 journey
 date: 2025-09-20
-series: 大模型
+series: llm
 ---
 
 从开始接触 llm 的 day1 起我就在记录，也伴随着 llm 技术自身的发展。

@@ -1,7 +1,7 @@
 ---
 title: llm 的 prompt 3
 date: 2026-01-06
-series: 大模型
+series: llm
 ---
 
 阿段的访谈很火，尤其是跟王石那段。有人给了我个 prompt。

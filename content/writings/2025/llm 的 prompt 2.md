@@ -1,7 +1,7 @@
 ---
 title: llm 的 prompt 2
 date: 2025-11-30
-series: 大模型
+series: llm
 ---
 
 今天新捡了一个无敌必杀的 ai 行业专家 prompt。然后我把 【行业】 替换成 A 股小试了一把。结果看得我心里怪怪的。

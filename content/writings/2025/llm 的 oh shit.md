@@ -1,7 +1,7 @@
 ---
 title: llm 的 oh shit 
 date: 2025-09-02
-series: 大模型
+series: llm
 ---
 
 oh shit 是 advanced aha。

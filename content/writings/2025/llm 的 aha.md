@@ -1,7 +1,7 @@
 ---
 title: llm 的 aha
 date: 2025-06-13
-series: 大模型
+series: llm
 ---
 
 ## 内耗地答

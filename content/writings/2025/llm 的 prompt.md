@@ -2,7 +2,7 @@
 title: llm 的 prompt
 date: 2025-07-20
 lastmod: 2025-07-24
-series: 大模型
+series: llm
 ---
 
 以下是我收集的一些充分体现了我 weird taste 的勇猛的 prompt，各有妙用。
