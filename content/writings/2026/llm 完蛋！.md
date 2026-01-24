@@ -1,5 +1,5 @@
 ---
-title: llm 完蛋
+title: llm 完蛋！
 date: 2026-01-24
 series: llm
 ---
