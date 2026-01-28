@@ -1,7 +1,7 @@
 ---
-title: llm 完蛋！
+title: 完蛋！llm
 date: 2026-01-24
-series: llm
+series: tbd
 ---
 
 不是 llm 要完蛋。是今年的年度总结（aka [完蛋！系列](https://asylog.github.io/writings/2025/%E5%AE%8C%E8%9B%8B%E7%B3%BB%E5%88%97/))，由我和 llm 一起书写。属于我和 llm 一起完蛋。感觉文风不太一样。

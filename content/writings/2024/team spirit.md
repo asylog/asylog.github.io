@@ -1,7 +1,7 @@
 ---
-title: "team spirit 胡诌"
+title: "team spirit"
 date: 2024-04-18
-series: 胡诌
+series: tbd 
 ---
 
 ## 正确
