@@ -1,10 +1,11 @@
 <main>
-  {{ range .Site.Sections.ByTitle.Reverse}}
+  {{ range .Site.Sections.ByTitle.Reverse }}
   <div>
     <h1>{{ lower .LinkTitle }}</h1>
 
-    {{ range .Pages.GroupByParam "series"}}
-    <h2>{{ .Key }}<sup>{{ .Pages.Len }}</sup></h2>
+    {{ $groups := .Pages.GroupByParam "series" }}
+    {{ range (sort $groups ".Pages.Len").Reverse }}
+    <h2>{{ .Key }}</h2>
     <ul>
       {{ range .Pages }}
       <li>
