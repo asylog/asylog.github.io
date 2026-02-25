@@ -13,7 +13,7 @@
 
 html {
   color: var(--blackcolor);
-  background: ffffff;
+  background: var(--whitecolor);
   font-family: "Source Sans", "Chinese Quote", monospace;
   font-size: 15px;
   line-height: 1.6em;
@@ -77,8 +77,8 @@ a:hover {
   color: var(--whitecolor);
   border-top: 3px solid var(--maincolor);
   border-bottom: 3px solid var(--maincolor);
-  /* outline: 3px solid var(--maincolor);
-  outline-offset: 3px; */
+  /* outline: 3px solid var(--maincolor); */
+  /* outline-offset: 3px; */
   transition: background-color 0.2s ease, color 0.2s ease;
 }
 
@@ -272,10 +272,6 @@ footer {
 
 .time {
   color: var(--graycolor);
-  /* letter-spacing: -0.5px; */
-  /* font-family: "Source Sans", "Chinese Quote", monospace; */
-  /* font-size: 1rem;
-  font-weight: light; */
 }
 
 /* .description {

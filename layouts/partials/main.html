@@ -8,9 +8,9 @@
     <h2>{{ .Key }}</h2>
     <ul>
       {{ range .Pages }}
-      <li>
+      <li style="position: relative">
         <a href="{{ .RelPermalink }}">{{.Title}}</a>
-        <span class="time">{{ dateFormat "2006-01-02" .Date }}</span>
+        <span class="time" style="position: absolute;right:0px">{{ dateFormat "2006-01-02" .Date }}</span>
       </li>
       {{ end }}
     </ul>
