@@ -2,7 +2,7 @@
 title: about me
 date: 2025-06-20
 lastmod: 2025-09-17
-series: tbd
+series: this
 ---
 
 - 我 2015 年回国后一直都在上海，偶尔到处瞎逛；纵然有很多 noise ，我坚信在我的有生之年，中国是世界的未来；

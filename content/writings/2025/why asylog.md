@@ -1,7 +1,7 @@
 ---
-title: "why asylog"
+title: why asylog
 date: 2025-12-18
-series: tbd
+series: this
 ---
 
 I decide to detach this blog from my personal GitHub account. If I don't want to use it to create/enhance any public appearance, why can't I just keep the anonymity and avoid being watched? 所以新注册了一个账号。
