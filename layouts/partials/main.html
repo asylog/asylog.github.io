@@ -1,0 +1,20 @@
+<main>
+  {{ range .Site.Sections.ByTitle.Reverse }}
+  <div>
+    <h1>{{ lower .LinkTitle }}</h1>
+
+    {{ $groups := .Pages.GroupByParam "series" }}
+    {{ range (sort $groups ".Pages.Len").Reverse }}
+    <h2>{{ .Key }}</h2>
+    <ul>
+      {{ range .Pages }}
+      <li style="position: relative">
+        <a href="{{ .RelPermalink }}">{{.Title}}</a>
+        <span class="time" style="position: absolute;right:0px">{{ dateFormat "2006-01-02" .Date }}</span>
+      </li>
+      {{ end }}
+    </ul>
+    {{ end }}
+  </div>
+  {{ end }}
+</main>
