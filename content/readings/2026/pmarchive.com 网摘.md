@@ -76,6 +76,15 @@ draft: true
 ## [Part 6 How much funding is too little? Too much?](https://pmarchive.com/guide_to_startups_part6.html)
 
 > Before Product/Market Fit, a startup should ideally raise at least enough money to get to Product/Market Fit.
-> 
+>
 > After Product/Market Fit, a startup should ideally raise at least enough money to fully exploit the opportunity in front of it, and then to get to profitability while still fully exploiting that opportunity.
 
+## [Part 7 Why a startup’s initial business plan doesn’t matter that much](https://pmarchive.com/guide_to_startups_part7.html)
+
+> A startup’s initial business plan doesn’t matter that much, because it is very hard to determine up front exactly what combination of product and market will result in success.
+
+## [Part 8 Hiring, managing, promoting, and firing executives](https://pmarchive.com/guide_to_startups_part8.html)
+
+> the output of an executive is the output of her organization.
+
+> Look for someone who is hungry and driven—someone who wants a shot at doing “their thing”.
