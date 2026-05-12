@@ -2,7 +2,6 @@
 title: pmarchive.com 网摘
 date: 2026-05-07
 series: 网摘
-draft: true
 ---
 
 ## [Part 1 Why not to do a startup](https://pmarchive.com/guide_to_startups_part1.html)
@@ -88,3 +87,31 @@ draft: true
 > the output of an executive is the output of her organization.
 
 > Look for someone who is hungry and driven—someone who wants a shot at doing “their thing”.
+
+## [How to hire the best people you’ve ever worked with](https://pmarchive.com/how_to_hire_the_best_people.html)
+
+> First, drive.
+
+> Second criterion: curiosity.
+
+> Third and final criterion: ethics.
+
+## [Pmarca Guide to Personal Productivity](https://pmarchive.com/guide_to_personal_productivity.html)
+
+> don’t keep a schedule
+
+> By not keeping a schedule, I mean: refuse to commit to meetings, appointments, or activities at any set time in any future day.
+>
+> As a result, you can always work on whatever is most important or most interesting, at any time.
+
+## [Part 3 Pmarca Guide to Career Planning: Where to go and why](https://pmarchive.com/guide_to_career_planning_part3.html)
+
+> Pick an industry where the founders of the industry—the founders of the important companies in the industry—are still alive and actively involved.
+
+> If you are young and want to have an impact, you want to be in an industry where there is a lot of growth and change and flux and opportunity.
+
+## [Part 1 Pmarca Guide to Career Planning: Opportunity](https://pmarchive.com/guide_to_career_planning_part1.html)
+
+> The first rule of career planning: Do not plan your career.
+
+> The second rule of career planning: Instead of planning your career, focus on developing skills and pursuing opportunities.
