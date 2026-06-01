@@ -45,9 +45,45 @@ p {
 
 blockquote {
   border-left: 4px solid var(--bordercolor);
-  color: var(--graycolor);
+  color: var(--graycolor) !important;
   margin: 0;
   padding-left: 1em;
+}
+
+
+blockquote :is(h1,h2,h3,h4,h5,h6) {
+  font-size: 1.2rem;
+  margin-top: 2em;
+}
+
+blockquote h1::before {
+  /* color: var(--maincolor); */
+  content: "# ";
+}
+
+blockquote h2::before {
+  /* color: var(--maincolor); */
+  content: "## ";
+}
+
+blockquote h3::before {
+  /* color: var(--maincolor); */
+  content: "### ";
+}
+
+blockquote h4::before {
+  /* color: var(--maincolor); */
+  content: "#### ";
+}
+
+blockquote h5::before {
+  /* color: var(--maincolor); */
+  content: "##### ";
+}
+
+blockquote h6::before {
+  /* color: var(--maincolor); */
+  content: "###### "
 }
 
 a[href*="localhost"],
@@ -96,7 +132,7 @@ ul li {
 ul > li::before {
   content: "* ";
   font-weight: bold;
-  color: var(--maincolor);
+  /* color: var(--maincolor); */
 }
 
 strong {
@@ -165,65 +201,45 @@ pre code {
 header {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
-  margin: 2em 0 4em;
-  line-height: 2.5em;
-}
-
-header .title {
-  font-size: 1.5rem;
+  /* justify-content: space-between; */
+  justify-content: end;
+  /* margin: 2em 0 4em; */
+  margin:2rem 0;
+  /* line-height: 2.5rem; */
 }
 
 /* Containers */
 .content {
-  margin-bottom: 4em;
-  margin-left: auto;
-  margin-right: auto;
+  /* margin-bottom: 4em; */
+  margin: 2rem auto;
   max-width: 640px;
   padding: 0 1ch;
   word-wrap: break-word;
 }
 
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-size: 1.2rem;
-  margin-top: 2em;
+/* h1, */
+h1 {
+  font-size:4rem;
+  font-weight: bold;
+  line-height: 4rem;
+  margin: 2rem 0 2rem;
 }
 
-h1::before {
-  color: var(--maincolor);
-  content: "# ";
+h2{
+  font-size:2rem;
+  font-weight: bold;
+  line-height: 2rem;
+  margin: 4rem 0 2rem;
 }
 
-h2::before {
-  color: var(--maincolor);
-  content: "## ";
+h3{
+  font-size:1.2rem;
+  font-weight: bold;
+  margin: 2rem 0 1rem;
+
 }
 
-h3::before {
-  color: var(--maincolor);
-  content: "### ";
-}
-
-h4::before {
-  color: var(--maincolor);
-  content: "#### ";
-}
-
-h5::before {
-  color: var(--maincolor);
-  content: "##### ";
-}
-
-h6::before {
-  color: var(--maincolor);
-  content: "###### ";
-}
 
 /* Footer */
 footer {
@@ -231,9 +247,8 @@ footer {
   align-items: center;
   justify-content: center;
   border-top: 0.2rem dotted var(--bordercolor);
-  padding: 1rem 0rem;
-  margin: 1em 0;
-  margin-top: 4rem;
+  padding: 1rem 0;
+  margin: 4rem 0;
 }
 
 /* .soc {
@@ -274,6 +289,9 @@ footer {
   color: var(--graycolor);
 }
 
+.post {
+  margin:1rem 0 0 0.2rem;
+}
 /* .description {
   margin-bottom: 4rem;
 } */

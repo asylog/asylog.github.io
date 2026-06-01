@@ -29,7 +29,7 @@ term = ['html']
 
 [params]
 mode = "light"
-subtitle = "excerpts and reflections, deviant ideas and intrusive thoughts."
+subtitle = "excerpts and reflections / deviant ideas and intrusive thoughts"
 mathjax = true
 copyrightUrl = "https://www.wtfpl.net/"
 
