@@ -6,11 +6,11 @@ series: llm
 
 我最早的时候写了两个 naive 的 agent。
 
-一个是帮我总结 arxiv 论文，然后输出到本地 markdown，并打开 kimi 对话框可以进一步讨论。另一个是让 llm 写 python 代码解决问题，本地执行 until success。
+一个是帮我总结 arxiv 论文，然后输出到本地 markdown，并打开 kimi 对话框可以进一步讨论。另一个是让 llm 写 python 代码解决问题，本地执行 until success。现在看来就是两脚本，说是agent都太浮夸。
 
-Then you have claude code leaked. Openclaw dominant and evade the internet. Tons of discussions on agent mechanism. 以及码农有了自己的 hermes.，然后又造出了 harness 这个概念，真的是卷。
+Then you have claude code leaked. Openclaws dominant and evade the internet. Tons of discussions on agent mechanism. 以及码农有了自己的 hermes.，然后又造出了 harness 这个概念，真的是卷。
 
-I wonder deep down how it actually works by consuming millions of token to accomplish complex tasks. So I recently follow a tutorial to build a mini agent myself.
+I wonder deep down how it actually works by consuming millions of tokens to accomplish complex tasks. So I recently follow a tutorial to build a mini agent myself.
 
 ## terminal ui
 
@@ -19,8 +19,6 @@ tui 的最外层就是个 while loop。只配置几个简单 command 拦截。
 核心就是这个`agent.generate_stream`方法
 
 ```python
-
-
 @dataclass
 class AgentConfig:
     api_key: str = field(default_factory=lambda: os.environ.get("DEEPSEEK_API_KEY"))
@@ -634,6 +632,4 @@ for m in reversed(self.messages):
 
 写完了 agent，它躺在那里几天了。
 
-其实最初我的想法是要用它来写 alpha 公式，调用 backtest 实现自动评估从而可以自动挖掘 alpha，类似 autoresearch。
-
-let's see
+其实最初我的想法是要用它来写 alpha 公式，调用 backtest 评测，从而可以自动挖掘 alpha。类似 autoresearch。

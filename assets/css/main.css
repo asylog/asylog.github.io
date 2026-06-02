@@ -174,7 +174,8 @@ figure h4::before {
 
 /* Code blocks */
 code {
-  background-color: var(--whitecolor);
+  background-color: var(--blackcolor);
+  color: var(--whitecolor);
   padding: 0.1em 0.2em;
 }
 
