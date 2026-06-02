@@ -10,16 +10,13 @@ enableRobotsTXT = true
 
 copyright = 'WTFPL'
 
-[menus]
-  [[menus.main]]
-    name = 'readings'
-    pageRef = 'readings'
-  [[menus.main]]
-    name = 'about'
-    pageRef = 'about'
-  [[menus.main]]
-    name = 'rss'
-    url = '/index.xml'
+# [menus]
+# [[menus.main]]
+#   name = 'readings'
+#   pageRef = 'readings'
+# [[menus.main]]
+# name = 'rss'
+# url = '/index.xml'
 
 [outputs]
 home = ['html', 'rss']
