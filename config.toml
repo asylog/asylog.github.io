@@ -29,7 +29,7 @@ mode = "light"
 subtitle = "excerpts and reflections / deviant ideas and intrusive thoughts"
 mathjax = true
 copyrightUrl = "https://www.wtfpl.net/"
-
+noaiUrl = "https://www.no-ai-icon.com/statement/?url=(asylog.github.io)"
 
 [frontmatter]
 date = ["lastmod", "date"]
