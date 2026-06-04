@@ -15,7 +15,7 @@
 html {
   color: var(--blackcolor);
   background: var(--whitecolor);
-  font-family: "Source Sans", "Chinese Quote", monospace;
+  font-family: "Source Sans", "Chinese Quote";
   font-size: 15px;
   line-height: 1.6em;
   width: 100vw;
@@ -37,9 +37,6 @@ body {
 }
 
 p {
-  font-family: "Source Sans", "Chinese Quote", monospace;
-  font-size: 15px;
-  line-height: 1.5em;
   margin-block-start: 2em;
   margin-block-end: 2em;
 }
