@@ -602,7 +602,7 @@ class Agent
 - 没有 memory，也没有 cross-session memory，因为我觉得太复杂了，我只想造 bot
 - 最终实现里没有 subagent，因为懒而没有在 agent 实现 permission，导致有安全问题
 - 没有 micor-compact
-  - deepseek 里的 `cache hit/cache miss = 50 = 0.28/0.0014`，所有 append only 更好
+  - deepseek 里的 cache hit/cache miss = 50 = 0.28/0.0014，所有 append only 更好
   - 虽然我实现过，但它会改写历史对话，就 comment out 掉了
 
 ```python
@@ -633,3 +633,5 @@ for m in reversed(self.messages):
 写完了 agent，它躺在那里几天了。
 
 其实最初我的想法是要用它来写 alpha 公式，调用 backtest 评测，从而可以自动挖掘 alpha。类似 autoresearch。
+
+to be continue
