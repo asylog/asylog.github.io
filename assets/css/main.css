@@ -7,6 +7,7 @@
 
   --blackcolor: #311d3f;
   --graycolor: #999999;
+  --lightgraycolor: #eff1f5;
   --whitecolor: #fefefe;
   --bordercolor: #e5e4e0;
 }
@@ -174,27 +175,29 @@ figure h4::before {
 
 /* Code blocks */
 code {
-  background-color: var(--blackcolor);
-  color: var(--whitecolor);
+  background-color: var(--lightgraycolor);
   padding: 0.1em 0.2em;
+  margin: 0;
+  font-family: "SF Mono", "Cascadia Code", monospace; 
+  font-size: 85%; 
+  display: inline-block;
+  vertical-align: middle;
 }
 
 pre {
-  background-color: var(--whitecolor);
   line-height: 1.4;
   overflow-x: auto;
   padding: 1em;
 }
 
-.highlight pre ::selection {
+/* .highlight pre ::selection {
   background: rgba(255, 255, 255, 0.2);
   color: inherit;
-}
+} */
 
 pre code {
   background-color: transparent;
   color: inherit;
-  font-size: 100%;
   padding: 0;
 }
 
@@ -353,12 +356,12 @@ svg {
   background-color: var(--bordercolor);
 } */
 
-.highlight {
+/* .highlight {
   position: relative;
   -webkit-overflow-scrolling: touch;
-}
+} */
 
-.highlight pre code[class*="language-"] {
+/* .highlight pre code[class*="language-"] {
   -webkit-overflow-scrolling: touch;
 }
 
@@ -374,7 +377,7 @@ svg {
   text-align: right;
   text-transform: uppercase;
   top: 0;
-}
+} */
 
 /*
 .highlight pre code[class="language-javaScript"]::before,
