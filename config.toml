@@ -4,15 +4,15 @@ title = "asylog"
 # pygmentsstyle = "monokai"
 # pygmentscodefences = true
 # pygmentscodefencesguesssyntax = true
+[markup]
+[markup.highlight]
+style = 'catppuccin-latte'
 
 enableEmoji = true
 enableRobotsTXT = true
 
 copyright = 'WTFPL'
 
-[markup]
-[markup.highlight]
-style = 'catppuccin-latte'
 
 # [menus]
 # [[menus.main]]
