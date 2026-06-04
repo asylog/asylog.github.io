@@ -85,7 +85,7 @@ blockquote h6::before {
 }
 
 a[href*="localhost"],
-a[href^="asylog.github.io"],
+a[href^="https://asylog.github.io"],
 a[href^="/"] 
 {
   color: inherit;
