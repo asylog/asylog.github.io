@@ -30,35 +30,35 @@ config = AgentConfig()
 agent = Agent(config)
 
 click.secho(
-	"Welcome to Agent TUI\n\nCommands\n/clear  clear current session\n/exit   exit the tui\n\ntype your prompt or command"
+    "Welcome to Agent TUI\n\nCommands\n/clear  clear current session\n/exit   exit the tui\n\ntype your prompt or command"
 )
 while True:
-	try:
-		user_input = click.prompt("", prompt_suffix=">")
-	except KeyboardInterrupt:
-		continue
-	except EOFError:
-		break
+    try:
+        user_input = click.prompt("", prompt_suffix=">")
+    except KeyboardInterrupt:
+        continue
+    except EOFError:
+        break
 
-	user_input = user_input.strip()
-	if not user_input:
-		continue
+    user_input = user_input.strip()
+    if not user_input:
+        continue
 
-	if user_input.startswith("/"):
-		if user_input == "/exit":
-			break
+    if user_input.startswith("/"):
+        if user_input == "/exit":
+            break
 
-		elif user_input == "/clear":
-			click.clear()
-			agent = Agent(config)
+        elif user_input == "/clear":
+            click.clear()
+            agent = Agent(config)
 
-		else:
-			click.echo(
-				f'Unknown command: {user_input}. Available: "/exit", "/clear"',
-			)
-	else:
-		for output in agent.generate_stream(user_input):
-			pretty_print(output)
+        else:
+            click.echo(
+                f'Unknown command: {user_input}. Available: "/exit", "/clear"',
+            )
+    else:
+        for output in agent.generate_stream(user_input):
+            pretty_print(output)
 
 ```
 
@@ -271,9 +271,9 @@ TOOLS= {
 
 class Agent
 ...
-	def _load_skill(self, args):
-		name = args["name"]
-		return self.skill_loader.get_content(name)
+    def _load_skill(self, args):
+        name = args["name"]
+        return self.skill_loader.get_content(name)
 ```
 
 ## todo
@@ -575,19 +575,19 @@ class Agent
                     }
 
                 )
-			# harness
+            # harness
             # todo
-			self.rounds_since_todo += 1
-			if self.rounds_since_todo >= 3:
-				m = "Please update progress with the todo tool and continue."
-				yield {"type": "role", "data": "user"}
-				yield {"type": "prompt", "data": m}
-				self.messages.append(
-					{
-						"role": "user",
-						"content": m,
-					}
-				)
+            self.rounds_since_todo += 1
+            if self.rounds_since_todo >= 3:
+                m = "Please update progress with the todo tool and continue."
+                yield {"type": "role", "data": "user"}
+                yield {"type": "prompt", "data": m}
+                self.messages.append(
+                    {
+                        "role": "user",
+                        "content": m,
+                    }
+                )
 
             iter += 1
             if iter >= self.max_iterations:
@@ -608,22 +608,22 @@ class Agent
 ```python
 tool_result_kept = 0
 for m in reversed(self.messages):
-	if m["role"] != "tool":
-		continue
+    if m["role"] != "tool":
+        continue
 
-	# keep last 3
-	if tool_result_kept < 3:
-		tool_result_kept += 1
-		continue
+    # keep last 3
+    if tool_result_kept < 3:
+        tool_result_kept += 1
+        continue
 
-	# replace with placeholder
-	tool_name = self.tool_calls[m["tool_call_id"]]["function"]["name"]
-	if not m["content"].startswith("[Previous"):
-		yield {
-			"type": "info",
-			"data": f"{tool_name} result compacted",
-		}
-		m["content"] = f"[Previous: used {tool_name}]"
+    # replace with placeholder
+    tool_name = self.tool_calls[m["tool_call_id"]]["function"]["name"]
+    if not m["content"].startswith("[Previous"):
+        yield {
+            "type": "info",
+            "data": f"{tool_name} result compacted",
+        }
+        m["content"] = f"[Previous: used {tool_name}]"
 ```
 
 - 没有用 llm 来总结实现上下文压缩，这个更复杂，还会丢 info

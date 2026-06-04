@@ -11,8 +11,6 @@ style = 'catppuccin-latte'
 enableEmoji = true
 enableRobotsTXT = true
 
-copyright = 'WTFPL'
-
 
 # [menus]
 # [[menus.main]]
@@ -33,6 +31,7 @@ mode = "light"
 subtitle = "excerpts and reflections / deviant ideas and intrusive thoughts"
 mathjax = true
 copyrightUrl = "https://www.wtfpl.net/"
+copyright = 'WTFPL'
 noaiUrl = "https://www.no-ai-icon.com/statement/?url=(asylog.github.io)"
 
 [frontmatter]
