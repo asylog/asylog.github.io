@@ -15,7 +15,7 @@
 html {
   color: var(--blackcolor);
   background: var(--whitecolor);
-  font-family: "Source Sans", "Chinese Quote";
+  font-family: "Source Sans", "Chinese Quote", monospace;
   font-size: 15px;
   line-height: 1.6em;
   width: 100vw;
