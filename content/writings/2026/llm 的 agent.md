@@ -10,7 +10,9 @@ series: llm
 
 Then you have claude code leaked. Openclaws dominant and evade the internet. Tons of discussions on agent mechanism. 以及码农有了自己的 hermes.，然后又造出了 harness 这个概念，真的是卷。
 
-I wonder deep down how it actually works by consuming millions of tokens to accomplish complex tasks. So I recently follow a tutorial to build a mini agent myself.
+I wonder in essence how it actually works when consuming millions of tokens to accomplish complex tasks. And I am not comfortable 用一个黑盒工具，把一堆本地信息无脑上传. So I follow a tutorial to build a mini agent myself.
+
+一个技术决定就是为了后续方便集成在 pipeline 里，我用了 python 而不是其它主流 agent 都用的 typescript。
 
 ## terminal ui
 
@@ -634,6 +636,4 @@ for m in reversed(self.messages):
 
 其实最初我的想法是要用它来写 alpha 公式，调用 backtest 评测，从而可以自动挖掘 alpha。类似 autoresearch。
 
-一个技术决定就是为了后续方便集成在 pipeline 里，我用了 python 而不是其它 agent 都用的 typescript。牺牲了一些tui的可能性。
-
-to be continue
+We will see.
