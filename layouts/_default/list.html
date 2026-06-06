@@ -1,0 +1,32 @@
+{{ define "main" }}
+<h1>{{ .Title }}</h1>
+{{ .Content }}
+
+<div>
+    {{ $groups := .Pages.GroupByParam "series" }}
+
+    <!-- sort group by its latest post's date -->
+    {{ $groupData := slice }}
+    {{ range $groups }}
+    {{ $latest := (index .Pages 0).Date }} {{/* start with first page's date */}}
+    {{ range .Pages }}
+    {{ if .Date.After $latest }}
+    {{ $latest = .Date }}
+    {{ end }}
+    {{ end }}
+    {{ $groupData = $groupData | append (dict "key" .Key "latest" $latest "group" .) }}
+    {{ end }}
+    {{ $sorted := sort $groupData "latest" "desc" }}
+
+    {{ range $sorted }}
+    <h2>{{ .key }}</h2>
+    {{ range .group.Pages }}
+    <div class="post" style="position: relative">
+        <a href="{{ .RelPermalink }}">{{.Title}}</a>
+        <span class="time" style="position: absolute;right:0px">{{ dateFormat "2006-01-02" .Date }}</span>
+    </div>
+    {{ end }}
+    {{ end }}
+</div>
+
+{{ end }}

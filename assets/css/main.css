@@ -283,7 +283,7 @@ footer {
 
 .meta {
   color: var(--graycolor);
-  /* margin-bottom: 4em; */
+  text-align: right;
 }
 
 .time {

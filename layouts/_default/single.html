@@ -4,15 +4,10 @@
   <article>
     <h1>{{ .Title }}</h1>
     <div class="meta">
-      <!-- <span>Posted on</span> -->
-      <!-- <span class="time">{{ dateFormat "2006-01-02" .Date }}</span> -->
-
-      <!-- {{ if .Params.series }}
-      <span>in series <a class="series" href="{{ relURL "series/" }}{{ .Params.series }}">{{ .Params.series
-          }}</a></span>
-      {{ end }} -->
+      <span>{{ .Params.series }} / {{ dateFormat "2006-01-02" .Date }}</span>
     </div>
     <section>{{ .Content }}</section>
   </article>
+
 </main>
 {{ end }}

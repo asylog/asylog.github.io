@@ -1,11 +1,11 @@
 <main>
   <h1>{{ .Site.Title }}</h1>
   <span>{{ .Site.Params.Subtitle }}</span>
-  {{ range .Site.Sections.ByTitle.Reverse }}
+
   <div>
-    <!-- <h1>{{ lower .LinkTitle }}</h1> -->
-    {{ $groups := .Pages.GroupByParam "series" }}
-    {{ range (sort $groups ".Pages.Len").Reverse }}
+    {{ $pages := where .Site.RegularPages "Section" "in" (slice "readings" "writings") }}
+    {{ $pages := $pages.ByDate.Reverse }}
+    {{ range $pages.GroupByDate "2006"}}
     <h2>{{ .Key }}</h2>
     {{ range .Pages }}
     <div class="post" style="position: relative">
@@ -15,5 +15,4 @@
     {{ end }}
     {{ end }}
   </div>
-  {{ end }}
 </main>
