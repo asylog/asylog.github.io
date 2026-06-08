@@ -1,16 +1,18 @@
 baseURL = "https://asylog.github.io/"
 title = "asylog"
 
-# pygmentsstyle = "monokai"
-# pygmentscodefences = true
-# pygmentscodefencesguesssyntax = true
-[markup]
-[markup.highlight]
-style = 'catppuccin-latte'
+pluralizelisttitles = false
+
 
 enableEmoji = true
 enableRobotsTXT = true
+# pygmentsstyle = "monokai"
+# pygmentscodefences = true
+# pygmentscodefencesguesssyntax = true
 
+[markup]
+[markup.highlight]
+style = 'catppuccin-latte'
 
 # [menus]
 # [[menus.main]]
