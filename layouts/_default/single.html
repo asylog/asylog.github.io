@@ -4,7 +4,7 @@
   <article>
     <h1>{{ .Title }}</h1>
     <div class="meta">
-      <span>{{ .Params.series }} / {{ dateFormat "2006-01-02" .Date }}</span>
+      <span>{{ .Params.series }} | {{ dateFormat "2006-01-02" .Date }}</span>
     </div>
     <!-- {{ .TableOfContents | replaceRE `href="#(.*)"` (printf `href="%s#%s"` .Page.RelPermalink "$1") | safeHTML }} -->
     <section>{{ .Content }}</section>
