@@ -2,7 +2,7 @@
 title: quiet quitting
 date: 2024-05-30
 lastmod: 2024-06-15
-series: 上班
+series: 班
 ---
 
 自从去年年底部门原领导离职后，组织架构发生了很大的变动。我离职的冲动如咖啡瘾一般经常发作。

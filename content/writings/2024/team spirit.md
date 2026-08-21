@@ -1,7 +1,7 @@
 ---
 title: team spirit
 date: 2024-04-18
-series: 上班
+series: 班
 ---
 
 ## 正确
