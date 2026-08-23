@@ -202,7 +202,6 @@ pre code {
 header {
   display: flex;
   flex-wrap: wrap;
-  /* justify-content: space-between; */
   justify-content: end;
   /* margin: 2em 0 4em; */
   margin:2rem 0;
