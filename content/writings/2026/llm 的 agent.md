@@ -235,13 +235,13 @@ class SystemPromptBuilder:
         # skill
         skills_desc = self.skill_loader.get_descriptions()
         if skills_desc:
-            prompt += f"""\n## Skills\n\n{skills_desc}"""
+            prompt += f"\n\n## Skills\n\n{skills_desc}"
 
-        # instruction from AGENT.md
-        prompt += """\n## Instructions
+        # Instructions
+        prompt += "\n\n\n## Instructions\n\n- Don't be evil."
+		# Environment
+        prompt += f"\n\n\n## Environment\n\n- Platform: {platform.system()}\n- OS Version: {platform.release()}"
 
-- Do not ...
-"""
         return prompt
 ```
 
@@ -391,6 +391,8 @@ class Permission:
             return {"behavior": "deny", "reason": "read only mode: writes blocked"}
 
         # fall through
+        if tool_name == "load_skill":
+            return {"behavior": "allow", "reason": "always allow skill loading"}
         if self.always_yes_when_ask:
             return {
                 "behavior": "allow",
@@ -600,10 +602,8 @@ class Agent
 ## no
 
 - 没有 memory，也没有 cross-session memory，因为我觉得太复杂了，我只想造 bot
-- 最终实现里没有 subagent，因为懒而没有在 agent 实现 permission，导致有安全问题
-- 没有 micor-compact
-  - deepseek 里的 cache hit/cache miss = 50 = 0.28/0.0014，所有 append only 更好
-  - 虽然我实现过，但它会改写历史对话，就 comment out 掉了
+- 最终实现里没有 subagent，因为没有在 agent 实现 permission 会有安全问题
+- 没有 micor-compact，因为 deepseek 里的 cache hit/cache miss = 50 = 0.28/0.0014，所有 append only 更好；以下是实现但 comment out 掉了
 
 ```python
 tool_result_kept = 0
@@ -625,8 +625,6 @@ for m in reversed(self.messages):
         }
         m["content"] = f"[Previous: used {tool_name}]"
 ```
-
-- 没有用 llm 来总结实现上下文压缩，这个更复杂，还会丢 info
 
 ## now what
 
