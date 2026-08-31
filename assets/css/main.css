@@ -5,10 +5,11 @@
   --linkcolor: #e7382844;
   --draftlabel: #831f65;
   --backgroundcolor: #fafafa;
+  --lightgraybackgroundcolor: #f0f0f0;
 
   --blackcolor: #311d3f;
   --graycolor: #999999;
-  --lightgraycolor: #f0f0f0;
+  --lightgraycolor: #dedede;
   --whitecolor: #fefefe;
   --bordercolor: #e5e4e0;
 }
@@ -85,36 +86,37 @@ blockquote h6::before {
   content: "###### "
 }
 
-a[href*="localhost"],
+/* a[href*="localhost"],
 a[href^="https://asylog.github.io"],
-a[href^="/"] 
+a[href^="/"]  */
+a
 {
   color: inherit;
   text-decoration: None;
-  /* border-bottom: 1px solid var(--blackcolor); */
-  border: none;
+  border-bottom: 1px solid var(--graycolor);
   background: none;
 }
 
-a {
+/* a {
   color: inherit;
   text-decoration: None;
-  /* border-bottom: 2px solid var(--graycolor); */
   background: linear-gradient(
     180deg,
-    transparent 0 55%,
-    var(--bordercolor) 55% 85%,
+    transparent 0 60%,
+    var(--lightgraycolor) 60% 85%,
     transparent 85% 100%
   );
   border: none;
-}
+} */
 
 a:hover {
   background: var(--hovercolor);
   color: var(--whitecolor);
-  border-top: 3px solid var(--hovercolor);
-  border-bottom: 2px solid var(--hovercolor);
+  /* border-top: 3px solid var(--hovercolor); */
+  border-bottom: 1px solid var(--hovercolor);
   transition: background-color 0.2s ease, color 0.2s ease;
+  /* border: none; */
+  cursor: pointer;
 }
 
 ul {
@@ -173,7 +175,7 @@ figure h4::before {
 
 /* Code quotes */
 code {
-  background-color: var(--lightgraycolor);
+  background-color: var(--lightgraybackgroundcolor);
   padding: 0.1em 0.2em;
   margin: 0;
   font-family: "SF Mono", "Cascadia Code", monospace; 
@@ -184,7 +186,7 @@ code {
 
 /* Code Block */
 pre {
-  background-color: var(--lightgraycolor) !important;
+  background-color: var(--lightgraybackgroundcolor) !important;
   line-height: 1.4;
   overflow-x: auto;
   padding: 1em;
