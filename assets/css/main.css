@@ -33,14 +33,63 @@ body {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
+
+.title-container {
+  margin: 4rem 0 4rem;
+}
+
+.content-container {
+  margin: 2rem auto;
+  max-width: 768px;
+  padding: 0 1ch;
+  word-wrap: break-word;
+}
+
+.subtitle {
+  color: var(--blackcolor);
+  font-size:1rem;
+}
+
+.series-and-time{
+  color: var(--graycolor);
+  font-size:1rem;
+}
+
+.group{
+  padding-bottom: 2rem;
+}
+.post-item {
+  margin:1rem 0 0 0.2rem;
+  position: relative;
+}
+
+.post-time{
+  position: absolute;
+  right:0px;
+  color: var(--graycolor);
+} 
+.footer-info {
+  padding: var(--footer-padding);
+  color: var(--graycolor);
+} 
+
+#progress-bar {
+  width: 0%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 4px;
+  background: linear-gradient(to right, var(--maincolor), var(--maincolor));
+}
+
 ::selection {
   background: var(--maincolor);
   color: var(--whitecolor);
 }
 
 p {
-  margin-block-start: 2em;
-  margin-block-end: 2em;
+  margin-block-start: 2rem;
+  margin-block-end: 2rem;
 }
 
 blockquote {
@@ -86,9 +135,16 @@ blockquote h6::before {
   content: "###### "
 }
 
-/* a[href*="localhost"],
+a[href*="localhost"],
 a[href^="https://asylog.github.io"],
-a[href^="/"]  */
+a[href^="/"] 
+{
+  color: inherit;
+  text-decoration: None;
+  border-bottom: 1px solid var(--blackcolor);
+  background: none;
+}
+
 a
 {
   color: inherit;
@@ -96,7 +152,6 @@ a
   border-bottom: 1px solid var(--graycolor);
   background: none;
 }
-
 /* a {
   color: inherit;
   text-decoration: None;
@@ -213,14 +268,6 @@ header {
   /* line-height: 2.5rem; */
 }
 
-/* Containers */
-.content {
-  /* margin-bottom: 4em; */
-  margin: 2rem auto;
-  max-width: 768px;
-  padding: 0 1ch;
-  word-wrap: break-word;
-}
 
 
 /* h1, */
@@ -234,14 +281,14 @@ h1 {
 h2{
   font-size:2rem;
   font-weight: bold;
-  line-height: 2rem;
-  margin: 4rem 0 2rem;
+  line-height:2.6rem;
+  margin: 2rem 0 2rem;
 }
 
 h3{
   font-size:1.2rem;
   font-weight: bold;
-  margin: 2rem 0 1rem;
+  margin: 1rem 0 1rem;
 
 }
 
@@ -268,9 +315,6 @@ footer {
   border: 1px solid;
 } */
 
-/* .footer-info {
-  padding: var(--footer-padding);
-} */
 
 /* .gray-icon {
   color: var(--graycolor);
@@ -285,18 +329,6 @@ footer {
 } */
 
 
-.meta {
-  color: var(--graycolor);
-  text-align: right;
-}
-
-.time {
-  color: var(--graycolor);
-}
-
-.post {
-  margin:1rem 0 0 0.2rem;
-}
 /* .description {
   margin-bottom: 4rem;
 } */
@@ -450,15 +482,6 @@ table th {
 table td {
   padding: 6px 13px;
   border: 1px solid var(--bordercolor);
-}
-
-#progress-bar {
-  width: 0%;
-  position: fixed;
-  top: 0;
-  left: 0;
-  height: 4px;
-  background: linear-gradient(to right, var(--maincolor), var(--maincolor));
 }
 
 /* #TableOfContents ul {

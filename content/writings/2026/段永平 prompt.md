@@ -1,5 +1,5 @@
 ---
-title: llm 的 prompt 3
+title: 段永平 prompt
 date: 2026-01-06
 series: llm
 ---

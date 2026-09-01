@@ -1,5 +1,8 @@
 {{ define "main" }}
-<h1>{{ .Title }}</h1>
+
+<div class="title-container">
+    <h1>{{ .Title }}</h1>
+</div>
 {{ .Content }}
 
 <div>
@@ -19,13 +22,15 @@
     {{ $sorted := sort $groupData "latest" "desc" }}
 
     {{ range $sorted }}
-    <h2>{{ .key }}</h2>
-    {{ range .group.Pages }}
-    <div class="post" style="position: relative">
-        <a href="{{ .RelPermalink }}">{{.Title}}</a>
-        <span class="time" style="position: absolute;right:0px">{{ dateFormat "2006-01-02" .Date }}</span>
+    <div class="group">
+        <h2>{{ .key }}</h2>
+        {{ range .group.Pages }}
+        <div class="post-item">
+            <a href="{{ .RelPermalink }}">{{.Title}}</a>
+            <span class="post-time">{{ dateFormat "2006-01-02" .Date }}</span>
+        </div>
+        {{ end }}
     </div>
-    {{ end }}
     {{ end }}
 </div>
 
