@@ -1,5 +1,5 @@
 ---
-title: llm 的 prompt
+title: prompt
 date: 2025-07-20
 lastmod: 2025-07-24
 series: llm

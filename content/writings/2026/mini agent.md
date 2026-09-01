@@ -1,5 +1,5 @@
 ---
-title: llm 的 agent
+title: mini agent
 date: 2026-06-02
 series: llm
 ---

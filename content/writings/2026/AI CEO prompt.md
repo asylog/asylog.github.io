@@ -1,12 +1,12 @@
 ---
-title: llm 的 prompt 4
+title: AI CEO prompt
 date: 2026-08-31
 series: llm
 ---
 
 当领导们开除码农换上了 AI coder，码农们开始开除领导换上了 AI CEO。所以相煎何太急，不应该对换一下，然后人类公司 vs AI 公司么。
 
-## CEO prompt
+## prompt
 
 <https://github.com/SenteLabsAI/OpenExecutive/blob/main/packages/core/openexecutive/prompts/executive_persona.py>
 

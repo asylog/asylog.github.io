@@ -1,5 +1,5 @@
 ---
-title: llm 的 prompt 2
+title: 专家 prompt
 date: 2025-11-30
 series: llm
 ---

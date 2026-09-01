@@ -1,5 +1,5 @@
 ---
-title: llm 的 oh shit 
+title: oh shit
 date: 2025-09-02
 series: llm
 ---
