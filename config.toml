@@ -37,7 +37,7 @@ noaiUrl = "https://www.no-ai-icon.com/statement/?url=(asylog.github.io)"
 date = ["lastmod", "date"]
 
 [services.rss]
-limit = 3
+limit = 7
 
 [permalinks]
 writings = "/:section/:year/:slug/"
