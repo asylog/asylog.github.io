@@ -4,7 +4,9 @@ date: 2026-08-26
 series: 股票
 draft: true
 ---
+
 ## journey
+
 ## should I use coding agent for quant code?
 
 yes, because
@@ -17,6 +19,7 @@ yes, because
 - 渐进式重写整个项目
 
 ## system
+
 ## 3 purposes
 
 - to test ideas
