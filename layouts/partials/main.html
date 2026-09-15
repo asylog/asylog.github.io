@@ -1,0 +1,22 @@
+<main>
+  <div class="title-container">
+    <h1>{{ .Site.Title }}</h1>
+    <span class="subtitle">{{ .Site.Params.Subtitle }}</span>
+  </div>
+
+  <div>
+    {{ $pages := where .Site.RegularPages "Section" "in" (slice "readings" "writings") }}
+    {{ $pages := $pages.ByDate.Reverse }}
+    {{ range $pages.GroupByDate "2006"}}
+    <div class="group">
+      <h2>{{ .Key }}</h2>
+      {{ range .Pages }}
+      <div class="post-item">
+        <a href="{{ .RelPermalink }}">{{.Title}}</a>
+        <span class="post-time">{{ dateFormat "01-02" .Date }}</span>
+      </div>
+      {{ end }}
+    </div>
+    {{ end }}
+  </div>
+</main>
