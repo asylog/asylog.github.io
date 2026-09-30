@@ -73,6 +73,6 @@ the answer is yes because
 
 前几天意外在 github 发现一个高星的 skill 叫 i-have-adhd 用来 shape ai output，极度舒适 really advanced 约束。
 
-让我一度怀疑我是不是也有 adhd，or 现代人人 adhd，只是 inattention 短更短不一。
+让我一度怀疑我是不是也有 adhd，or 现代人人 adhd，只是 in attention 短更短不一。
 
-但至少让我的注意力更加集中了，集中到走神时因为一直姿势没动，颈椎有点疼，我需要一个 i-don't-want-neck-pain skill。
+但至少让我的注意力更加集中了，集中到走神时因为一直姿势没动，颈椎有点疼，我需要一个 i-do-not-want-neck-pain skill。
