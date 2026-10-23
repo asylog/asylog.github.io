@@ -1,10 +1,12 @@
 ---
-title: asylog 写作风格 prompt
+title: asylog 盗版
 date: 2026-10-23
 series: llm
 ---
 
 以下是 dsh 输出的文档之一。任务是“读取所有写作的文章在 writings ，总结一下写作风格。并写一个 prompt 用来使用同样的风格来创作其它内容。”
+
+# asylog 写作风格 prompt
 
 ## 怎么用
 
